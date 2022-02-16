@@ -1,7 +1,7 @@
 import { FormHandles } from "@unform/core";
 import { useRef } from "react";
 import { FiCheckSquare } from "react-icons/fi";
-import { Food } from "../Food";
+import { TypeFood } from "../Food";
 import Input from "../Input";
 import Modal from "../Modal";
 import { Form } from "./styles";
@@ -15,7 +15,7 @@ interface ModalAddFoodProps {
 function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {
   const formRef = useRef<FormHandles>(null);
 
-  async function handleSubmit(data: Food) {
+  async function handleSubmit(data: TypeFood) {
     handleAddFood(data);
     setIsOpen();
   }
