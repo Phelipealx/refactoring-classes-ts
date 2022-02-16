@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-modal": "^3.13.1",
+    "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.22",
     "@unform/core": "^2.1.6",
     "@unform/web": "^2.1.6",
