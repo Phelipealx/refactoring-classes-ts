@@ -1,4 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
+
+interface ContainerInputProps {
+  isFocused: boolean;
+  isFilled: boolean;
+}
 
 export const Container = styled.div`
   display: flex;
@@ -21,14 +26,14 @@ export const Container = styled.div`
     line-height: 36px;
   }
 
-  ${props =>
+  ${(props: ContainerInputProps) =>
     props.isFocused &&
     css`
       color: #ff9000;
       border-color: #ff9000;
     `}
 
-  ${props =>
+  ${(props: ContainerInputProps) =>
     props.isFilled &&
     css`
       color: #ff9000;
