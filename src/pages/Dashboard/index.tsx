@@ -34,7 +34,7 @@ function Dashboard() {
 
   async function handleUpdateFood(food: TypeFood) {
     try {
-      const foodUpdated = await api
+      await api
         .put(`/foods/${editingFood.id}`, {
           ...editingFood,
           ...food,
